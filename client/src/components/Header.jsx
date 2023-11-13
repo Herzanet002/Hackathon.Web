@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from 'react-router-dom'
 //img
-import headerImg from '../assets/pexels-binyamin-mellish-186078.png'
+import headerImg from '../assets/pngegg.png'
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
         gap: theme.spacing(2),
         paddingTop: theme.spacing(10),
         // cor de fundo
-        backgroundColor: 'orange',
+        backgroundColor: '#537072',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
             alignItems: 'center',
@@ -45,10 +45,10 @@ const Header = () => {
                 component= 'h1'
                 sx={{
                     fontWeight: 700,
-                    color: '#fff',
+                    color: '#f4ebdb',
                 }}
                 >
-                    We'll build house of your dream
+                    IT-форум "СуперГик"
                 </Typography>
 
                 <Typography
@@ -57,11 +57,10 @@ const Header = () => {
                 sx={{
                     py: 3,
                     lineHeight: 1.6,
-                    color: '#fff',
+                    color: '#f4ebdb',
                 }}
                 >
-                    We have 9000 more review and our customers
-                    trust on out property and quality products.
+                    14 ноября в 13:00-17:00 в коворкинге IT колледжа(г. Курган, пр.Машиностроителей, 14к2а) будет проходить IT-форум "СуперГик".
                 </Typography>
 
                 <Box>
@@ -75,7 +74,7 @@ const Header = () => {
                         textTransform: 'capitalize',
                         borderRadius: 0,
                         borderColor: '#14192d',
-                        color: '#fff',
+                        color: '#f4ebdb',
                         backgroundColor: '#14192d',
                         "&&:hover": {
                             backgroundColor: "#343a55"
@@ -85,7 +84,7 @@ const Header = () => {
                         }
                     }}
                     >
-                        buy now
+                        Регистрация
                     </Button>
                     <Button 
                     component={Link} 
@@ -97,9 +96,9 @@ const Header = () => {
                         fontSize:'0.9rem',
                         textTransform: 'capitalize',
                         borderRadius: 0,
-                        color: '#fff',
+                        color: '#f4ebdb',
                         backgroundColor: 'transparent',
-                        borderColor: '#fff',
+                        borderColor: '#f4ebdb',
                         "&&:hover": {
                             color: '#343a55',
                             borderColor: '#343a55',
@@ -110,7 +109,7 @@ const Header = () => {
                         }
                     }}
                     >
-                        explore
+                        Программа
                     </Button>
                 </Box>
             </BoxText>

@@ -9,6 +9,7 @@ import {
     styled,
     ListItemButton,
     ListItemText,
+    rgbToHex,
 } from '@mui/material';
 // menu
 import DrawerItem from './DrawerItem';
@@ -32,15 +33,19 @@ const ListMenu = styled(List)(({ theme }) => ({
 //rotas
 const itemList = [
     {
-      text: "Home",
+      text: "Главная",
       to: "/" 
     },
     {
-      text: "About",
+      text: "О нас",
       to: "/about"
     },
     {
-        text: "Contact",
+        text: "Программа",
+        to: "/contact"
+    },
+    {
+        text: "Контакты",
         to: "/contact"
     }
 ];
@@ -53,17 +58,18 @@ const Navbar = () => {
         component="nav" 
         position="sticky"
         sx={{ 
-            backgroundColor: 'orange', 
+            backgroundColor: '#537072', 
         }}
         elevation={0}
         >
             <StyledToolbar>
                 <Typography
-                variant="h6"
+                variant="h4"
                 component="h2"
+                color='#f4ebdb'
 
                 >
-                    HBSales
+                    СуперГик
                 </Typography>
                 <Box sx={{display: { xs: 'block', sm: 'none' } }}>
                     <DrawerItem /> 
@@ -75,7 +81,7 @@ const Navbar = () => {
                             <ListItem key={text}>
                                 <ListItemButton component={Link} to={item.to}
                                 sx={{
-                                    color: '#fff',
+                                    color: '#f4ebdb',
                                     "&:hover": {
                                         backgroundColor: 'transparent',
                                         color: '#1e2a5a',
