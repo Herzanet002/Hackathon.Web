@@ -51,9 +51,8 @@ const Details = () => {
           alignItems='center'
           sx={{
             py: 10,
-            px: 2,
-            height: '72vh',
-          }}
+            px: 2
+        }}
         >
           {/* Left Stack */}
           <Stack component='section' direction="column" justifyContent='left'>

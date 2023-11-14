@@ -1,10 +1,12 @@
 import React from "react";
 
 const ForumProgram = () => {
+    
     return (
         <>
-       <div style={{padding: '0 40px', margin: '0 auto', maxWidth: '960px',  marginTop: '50px', display: 'flex'}}>
+       <div style={{padding: '0 40px', maxWidth: '960px',  marginTop: '50px', display: 'flex'}}>
             <ul style={{listStyleType: 'none', fontFamily: "Roboto, Helvetica, Arial" , fontWeight: '400',fontSize: '1rem',lineHeight: '1.5', color: '#7b7b7b', paddingLeft: '0'}}>
+                <h1 style={{marginBottom: '40px', fontFamily: "Roboto,Helvetica,Arial,sans-serif", fontWeight: '400',fontWeight: '700', color:"#000"}}>Программа форума</h1>
                 <li style={{marginBottom: '30px'}}>Открытие форума с приветственным словом организаторов - начало работы форума в 9:00 утра.</li>
                 <li style={{marginBottom: '30px'}}>Проведение пленарных заседаний по основным темам IT-форума - с 9:30 до 11:30. Спикерами будут выступать известные эксперты из IT-индустрии, рассказывая о последних тенденциях и инновациях.</li>
                 <li style={{marginBottom: '30px'}}>Организация параллельных сессий по узким направлениям IT-индустрии - с 12:00 до 14:00. Участники смогут выбрать сессии по своим интересам и углубить свои знания в конкретной области.</li>

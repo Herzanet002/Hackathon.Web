@@ -48,29 +48,21 @@ const Footer = () => {
         text={'г. Курган, пр.Машиностроителей, 14к2а'} 
         />
         <FooterLink 
-        text={'8(3522) 25-52-69'} 
+        // text={'it@ktk-45.ru'} 
         />
         <FooterLink 
-        // text={'info@housesales.com'} 
+        text={''} 
         />
       </StackColumn>
       
       <StackColumn>
-        <FooterTitle text={'our services'} />
-        <FooterLink text={'buy house'} />
-        <FooterLink text={'sell house'} />
-        <FooterLink text={'rent house'} />
-        <FooterLink text={'build house'} />
+        <FooterTitle text={'Контакты'} />
+        <FooterLink text={'8(3522) 25-52-69'} />
+        <FooterLink text={'it@ktk-45.ru'} />
       </StackColumn>
+    
       <StackColumn>
-        <FooterTitle text={'our company'} />
-        <FooterLink text={'reporting'} />
-        <FooterLink text={'get in touch'} />
-        <FooterLink text={'management'} />
-      </StackColumn>
-
-      <StackColumn>
-        <FooterTitle text={'hBSales'} />
+        <FooterTitle text={'One.Code.Web'} />
         <Stack 
         direction='row' 
         width= '70px'
@@ -102,7 +94,7 @@ const Footer = () => {
         variant='caption'
         component='p' 
         >
-          &copy; 2022 HBSales Inc.
+          &copy; 2023 One.Code.Web.
         </Typography>
       </StackColumn>
     </BoxRow>
