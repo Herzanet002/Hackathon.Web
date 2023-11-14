@@ -1,14 +1,12 @@
 import React,{ useState } from 'react'
-// mui
 import { 
     Typography,
     Box,
     Stack,
 } from "@mui/material";
-// carousel
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-// components
 import Title from './Title'
 import Paragraph from './Paragraph'
 
