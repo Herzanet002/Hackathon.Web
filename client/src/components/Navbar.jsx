@@ -45,7 +45,7 @@ const itemList = [
     },
     {
         text: "Программа",
-        to: "/contact"
+        to: "/program"
     },
     {
         text: "Контакты",
