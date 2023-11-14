@@ -35,109 +35,91 @@ const Header = () => {
 
 
   return  (
-        <CustomBox component='header'>
-            <BoxText 
-            component='section'
-            >
-                <Typography
-                variant='h2'
-                component= 'h1'
-                sx={{
-                    fontWeight: 700,
-                    color: '#f4ebdb',
-                }}
-                >
-                    IT-форум "СуперГик"
-                </Typography>
+<CustomBox component='header'>
+      <BoxText component='section'>
+        <Typography variant='h2' component='h1' sx={{ fontWeight: 700, fontSize: '4.0rem', color: '#f4ebdb' }}>
+          IT-форум "СуперГик"
+        </Typography>
 
-                <Typography
-                variant='p'
-                component='p'
-                sx={{
-                    py: 3,
-                    lineHeight: 1.6,
-                    color: '#f4ebdb',
-                }}
-                >
-                    14 ноября в 13:00-17:00 в коворкинге IT колледжа г. Курган, пр.Машиностроителей, 14к2а будет проходить IT-форум "СуперГик".
-                </Typography>
+        <Typography variant='p' component='p' sx={{ py: 3, lineHeight: 1.6, fontSize: '1.5rem', color: '#f4ebdb' }}>
+        14 ноября с 13:00 по 17:00 в коворкинге IT колледжа г. Курган, пр.Машиностроителей, 14к2а будет проходить IT-форум "СуперГик".
+      </Typography>
 
-                <Box>
-                    <Button 
-                    variant='contained'
-                    sx={{
-                        mr: 2,
-                        px: 4, 
-                        py: 1,
-                        fontSize: '0.9rem',
-                        textTransform: 'capitalize',
-                        borderRadius: 0,
-                        borderColor: '#14192d',
-                        color: '#f4ebdb',
-                        backgroundColor: '#14192d',
-                        "&&:hover": {
-                            backgroundColor: "#343a55"
-                        },
-                        "&&:focus": {
-                            backgroundColor: "#343a55"
-                        }
-                    }}
-                    >
-                        Регистрация
-                    </Button>
-                    <Button 
-                    component={Link} 
-                    to={'/about'}
-                    variant='outlined'
-                    sx={{
-                        px: 4, 
-                        py: 1,
-                        fontSize:'0.9rem',
-                        textTransform: 'capitalize',
-                        borderRadius: 0,
-                        color: '#f4ebdb',
-                        backgroundColor: 'transparent',
-                        borderColor: '#f4ebdb',
-                        "&&:hover": {
-                            color: '#343a55',
-                            borderColor: '#343a55',
-                        },
-                        "&&:focus": {
-                            color: '#343a55',
-                            borderColor: '#343a55',
-                        }
-                    }}
-                    >
-                        Программа
-                    </Button>
-                </Box>
-            </BoxText>
+        <Box>
+          <Button
+            variant='contained'
+            sx={{
+              mr: 2,
+              px: 4,
+              py: 1,
+              fontSize: '0.9rem',
+              textTransform: 'capitalize',
+              borderRadius: 0,
+              borderColor: '#14192d',
+              color: '#f4ebdb',
+              backgroundColor: '#14192d',
+              '&&:hover': {
+                backgroundColor: '#343a55',
+              },
+              '&&:focus': {
+                backgroundColor: '#343a55',
+              },
+            }}
+          >
+            Регистрация
+          </Button>
+          <Button
+            component={Link}
+            to='/about'
+            variant='outlined'
+            sx={{
+              px: 4,
+              py: 1,
+              fontSize: '0.9rem',
+              textTransform: 'capitalize',
+              borderRadius: 0,
+              color: '#f4ebdb',
+              backgroundColor: 'transparent',
+              borderColor: '#f4ebdb',
+              '&&:hover': {
+                color: '#343a55',
+                borderColor: '#343a55',
+              },
+              '&&:focus': {
+                color: '#343a55',
+                borderColor: '#343a55',
+              },
+            }}
+          >
+            Программа
+          </Button>
+        </Box>
+      </BoxText>
 
-            <Box sx={theme => ({
-                [theme.breakpoints.down('md')]:{
-                    flex: '1',
-                    paddingTop: '30px',
-                    alignSelf: 'center',
-                },
-                [theme.breakpoints.up('md')]:{
-                    flex: '2',
-                    alignSelf: 'flex-end',
-                },
-            })}
-            >
-                <img
-                src={headerImg}
-                alt="headerImg"
-                style={{ 
-                    width: "70vh", 
-                    marginBottom: 10,
-                    marginLeft:200
-
-                }}
-                />
-            </Box>
-
-        </CustomBox>
+      <Box
+        sx={(theme) => ({
+          [theme.breakpoints.down('md')]: {
+            flex: '1',
+            paddingTop: '30px',
+            alignSelf: 'center',
+          },
+          [theme.breakpoints.up('md')]: {
+            flex: '2',
+            alignSelf: 'flex-end',
+          },
+        })}
+      >
+        <img
+          src={headerImg}
+          alt="headerImg"
+          style={{
+            width: "70vh",
+            marginBottom: 10,
+            marginLeft: 200,
+          }}
+        />
+      </Box>
+    </CustomBox>
     )
 }
 
