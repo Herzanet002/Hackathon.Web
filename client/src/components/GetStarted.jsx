@@ -7,8 +7,8 @@ import {
 } from '@mui/material'
 import Title from './Title'
 // img
-import imgDetail from '../assets/pexels-alex-staudinger-1732414.jpg';
-import imgDetail2 from '../assets/pexels-pixabay-271816.jpg';
+import imgDetail from '../assets/BG1-1.jpg';
+import imgDetail2 from '../assets/service-4.jpg';
 
 
 const GetStarted = () => {
@@ -47,14 +47,14 @@ const GetStarted = () => {
                 >
                     <Title
                     text={
-                        'We make it easy for tenants and landlords'
+                        'Обмен опытом и лучшими практиками'
                     }
                     textAlign={'start'}
                     />
                     <CustomTypography>
-                        Listing are updated continuously so you<br />
-                        won't miss out on homes that just hit<br />
-                        market until you find your perfect home.
+                    Участники форума делятся своим опытом и знаниями,<br />
+                    что позволяет каждому узнать о лучших<br />
+                    практиках и подходах в IT-сфере.
                     </CustomTypography> 
                 </Box>
 
@@ -92,14 +92,14 @@ const GetStarted = () => {
                 >
                     <Title
                     text={
-                        'Match with the best agent'
+                        'Расширение знаний и навыков'
                         
                     }
                     textAlign={'start'}
                     />
                     <CustomTypography>
-                        Our verified partner Agents are local experts who<br /> 
-                        earn an average of 4.8/5 stars from buyers and sellers.
+                        Участие в форуме поможет вам узнать о новых возможностях для развития  <br /> 
+                        в сфере информационных технологий и расширить свои знания и навыки.
                     </CustomTypography>
                 </Box>
             </CustomGridItem>

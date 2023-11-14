@@ -43,15 +43,15 @@ const Footer = () => {
     }}
     >
       <StackColumn>
-        <FooterTitle text={'address'} />
+        <FooterTitle text={'Адрес'} />
         <FooterLink 
-        text={'15th Louis St, london 92382, eng'} 
+        text={'г. Курган, пр.Машиностроителей, 14к2а'} 
         />
         <FooterLink 
-        text={'25 999-345-10800'} 
+        text={'8(3522) 25-52-69'} 
         />
         <FooterLink 
-        text={'info@housesales.com'} 
+        // text={'info@housesales.com'} 
         />
       </StackColumn>
       

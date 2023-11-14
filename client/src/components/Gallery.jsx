@@ -20,23 +20,23 @@ const Gallery = () => {
     const imageData = [
         {
             alt: 'image1',
-            url: 'https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?cs=srgb&dl=pexels-pixabay-259751.jpg&fm=jpg'
+            url: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/2c8/f4b/851/2c8f4b851fecbe4f37db9aaa83c1987f.jpeg'
         },
         {
             alt: 'image2',
-            url: 'https://images.pexels.com/photos/5411784/pexels-photo-5411784.jpeg?cs=srgb&dl=pexels-andrea-davis-5411784.jpg&fm=jpg'
+            url: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/c28/98e/2a4/c2898e2a4d22bb1b0a7af52a7b14cdbf.jpeg'
         },
         {
             alt: "image3",
-            url: 'https://images.pexels.com/photos/356809/pexels-photo-356809.jpeg?cs=srgb&dl=pexels-daniel-frank-356809.jpg&fm=jpg'
+            url: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/5ae/1c8/043/5ae1c8043cdbca5ab64bfd57cddef162.jpeg'
         },
         {
             alt: "image4",
-            url: 'https://images.pexels.com/photos/6267516/pexels-photo-6267516.jpeg?cs=srgb&dl=pexels-get-lost-mike-6267516.jpg&fm=jpg'
+            url: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/0ec/56e/cfe/0ec56ecfe6a6871eaf013ff1f1d24d3d.jpeg'
         },
         {
             alt: "image5",
-            url: 'https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?cs=srgb&dl=pexels-huseyn-kamaladdin-667838.jpg&fm=jpg'
+            url: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/312/3e0/fc2/3123e0fc2cb4305add197a45e5eae643.jpeg'
         },
     ];
   

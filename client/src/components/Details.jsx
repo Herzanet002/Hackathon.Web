@@ -29,18 +29,21 @@ const Details = () => {
         sx={{
             py: 10,
             px: 2,
+            
+        }}
+        style={{ 
+            height: "54vh",
         }}
         >
             <Title 
             text={
-                'Interesting to buy property'
+                'Стало интерестно?'
                 } 
             textAlign={'center'}
             />
             <Paragraph 
             text={
-                'If you are interested to buy the property contact us we will call you. \
-                Shortly to fulfill you requirements and property.'
+                'Для получения дополнительной информации о регистрации, программе и других вопросах, пожалуйста, свяжитесь с нами.'
             }
             maxWidth = {'sm'}
             mx={0}
@@ -60,7 +63,7 @@ const Details = () => {
                     required
                     fullWidth
                     id="email"
-                    label="Email Address"
+                    label="Email адрес"
                     name="email"
                     autoComplete="email"
                     autoFocus
@@ -70,7 +73,7 @@ const Details = () => {
                     required
                     fullWidth
                     name="phone"
-                    label="Phone Number"
+                    label="Номер телефона"
                     type="phone"
                     id="phone"
                     autoComplete="current-phone"
@@ -93,7 +96,7 @@ const Details = () => {
                     }
                 }}
                 >
-                    send
+                    Отправить 
                 </Button>
             </Box>
         </Stack>
