@@ -44,7 +44,6 @@ const Header = () => {
         <Typography variant='p' component='p' sx={{ py: 3, lineHeight: 1.6, fontSize: '1.5rem', color: '#f4ebdb' }}>
         14 ноября с 13:00 по 17:00 в коворкинге IT колледжа г. Курган, пр.Машиностроителей, 14к2а будет проходить IT-форум "СуперГик".
       </Typography>
-
         <Box>
           <Button
             variant='contained'
