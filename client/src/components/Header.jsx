@@ -36,7 +36,6 @@ const Header = () => {
 
   return  (
         <CustomBox component='header'>
-            {/*  Box text  */}
             <BoxText 
             component='section'
             >
@@ -130,8 +129,9 @@ const Header = () => {
                 src={headerImg}
                 alt="headerImg"
                 style={{ 
-                    width: "100%", 
+                    width: "70vh", 
                     marginBottom: -15,
+
                 }}
                 />
             </Box>

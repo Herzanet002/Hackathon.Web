@@ -22,16 +22,13 @@ const GetInTouch = () => {
         >
             <Title 
             text={
-                'Contact us to buy property'
+                'Свяжитесь с нами, если стало интересно'
                 } 
             textAlign={'center'}
             />
             <Paragraph 
             text={
-                'It is our commitment to ensure a professional and enjoyable \
-                new home buying experience for you. \
-                If you want to get a home to start living as a family in an \
-                area that you love click the button below.'
+                'Мы приглашаем всех специалистов в области информационных технологий принять участие в нашем форуме. Здесь вы сможете обсудить последние технологические новинки, узнать о лучших практиках в своей области и завести новые контакты. Не упустите возможность стать частью этого уникального события!'
             }
             maxWidth = {'sm'}
             mx={0}
@@ -55,8 +52,11 @@ const GetInTouch = () => {
                     backgroundColor: '#1e2a5a',
                 }
             }}
+            style={{ 
+                textTransform: 'inherit'
+            }}
             >
-                get in touch
+                Cвязаться с нами 
             </Button>
  
         </Stack>

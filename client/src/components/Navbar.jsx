@@ -1,4 +1,7 @@
 import React from 'react'
+import logo from '../assets/logo.png';
+
+
 import {
     AppBar,
     Toolbar,
@@ -65,11 +68,17 @@ const Navbar = () => {
             <StyledToolbar>
                 <Typography
                 variant="h4"
-                component="h2"
+                component="div"
                 color='#f4ebdb'
 
                 >
-                    СуперГик
+                 <img
+                src={logo}
+                alt="logo-img"
+                style={{ 
+                    width: "150px", 
+                }}
+                />
                 </Typography>
                 <Box sx={{display: { xs: 'block', sm: 'none' } }}>
                     <DrawerItem /> 
