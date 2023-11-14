@@ -88,7 +88,6 @@ id="lastName"
 label="Фамилия"
 name="lastName"
 fullWidth
-autoFocus
 className='validate'
 />
 <TextField
@@ -98,7 +97,6 @@ id="patronymic"
 label="Отчество"
 name="patronymic"
 fullWidth
-autoFocus
 className='validate'
 />
 <TextField
@@ -109,7 +107,6 @@ fullWidth
 id="age"
 label="Возраст"
 name="age"
-autoFocus
 className='validate'
 />
 <TextField
@@ -121,7 +118,6 @@ id="email"
 label="Email адрес"
 name="email"
 autoComplete="email"
-autoFocus
 className='validate'
 />
 <TextField
@@ -132,7 +128,6 @@ fullWidth
 id="experience"
 label="Опыт работы"
 name="experience"
-autoFocus
 className='validate'
 />
 <TextField
@@ -143,7 +138,6 @@ fullWidth
 id="profession"
 label="Профессия"
 name="profession"
-autoFocus
 className='validate'
 />
 <Button
