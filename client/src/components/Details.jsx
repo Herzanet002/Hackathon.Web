@@ -28,8 +28,8 @@ const Details = () => {
     return (
         <Stack 
         component='section'
-        direction="column"
-        justifyContent= 'center'
+        direction="row"
+        justifyContent= 'left'
         alignItems='center'
         sx={{
             py: 10,
@@ -37,9 +37,14 @@ const Details = () => {
             
         }}
         style={{ 
-            height: "54vh",
+            height: "72vh",
         }}
         >
+            <Stack
+            component='section'
+            direction="column"
+            justifyContent= 'left'
+            >
             <Title 
             text={
                 'Стало интерестно?'
@@ -54,103 +59,118 @@ const Details = () => {
             mx={0}
             textAlign={'center'}
             />
+            </Stack>
+            
+            <Box
+component="form"
+noValidate
+onSubmit={handleSubmit}
+sx={{
+width: '40%', // Устанавливаем ширину на половину экрана
+mx: 'auto', // Центрируем по горизонтали
+mt: 1,
+py: 2,
+}}
+>
+<TextField
+margin="normal"
+size='small'
+required
+fullWidth
+id="firstName"
+label="Имя"
+name="firstName"
+autoFocus
+className='validate'
+/>
+<TextField
+margin="normal"
+size='small'
+required
+id="lastName"
+label="Фамилия"
+name="lastName"
+fullWidth
+autoFocus
+className='validate'
+/>
+<TextField
+margin="normal"
+size='small'
+id="patronymic"
+label="Отчество"
+name="patronymic"
+fullWidth
+autoFocus
+className='validate'
+/>
+<TextField
+margin="normal"
+size='small'
+required
+fullWidth
+id="age"
+label="Возраст"
+name="age"
+autoFocus
+className='validate'
+/>
+<TextField
+margin="normal"
+size='small'
+required
+fullWidth
+id="email"
+label="Email адрес"
+name="email"
+autoComplete="email"
+autoFocus
+className='validate'
+/>
+<TextField
+size='small'
+margin="normal"
+required
+fullWidth
+id="experience"
+label="Опыт работы"
+name="experience"
+autoFocus
+className='validate'
+/>
+<TextField
+size='small'
+margin="normal"
+required
+fullWidth
+id="profession"
+label="Профессия"
+name="profession"
+autoFocus
+className='validate'
+/>
+<Button
+variant="contained"
+type="submit"
+size="medium"
+sx={{
+fontSize: '0.9rem',
+textTransform: 'capitalize',
+py: 1,
+mt: 3,
+mb: 2,
+borderRadius: 1, // Здесь устанавливаем значение закругления (можете изменить на свое усмотрение)
+backgroundColor: '#14192d',
+"&:hover": {
+backgroundColor: '#1e2a5a',
+}
+}}
+>
+Отправить
+</Button>
+</Box>
 
-            <Box 
-            component="form" 
-            noValidate 
-            onSubmit={handleSubmit} 
-            sx={{ 
-                mt: 1,
-                py: 2
-            }}>
-                <TextField
-                    margin="normal"
-                    required
-                    id="firstName"
-                    label="Имя"
-                    name="firstName"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                    required
-                    id="lastName"
-                    label="Фамилия"
-                    name="lastName"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                
-                    id="patronymic"
-                    label="Отчество"
-                    name="patronymic"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                    required
-                    
-                    id="age"
-                    label="Возраст"
-                    name="age"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                    required
-                    
-                    id="email"
-                    label="Email адрес"
-                    name="email"
-                    autoComplete="email"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                    required
-                    id="experience"
-                    label="Опыт работы"
-                    name="experience"
-                    autoFocus
-                    className='validate'
-                />
-                <TextField
-                    margin="normal"
-                    required
-                    
-                    id="profession"
-                    label="Профессия"
-                    name="profession"
-                    autoFocus
-                    className='validate'
-                />
-                <Button 
-                variant="contained" 
-                
-                type="submit"
-                size="medium"
-                sx= {{ 
-                    fontSize: '0.9rem',
-                    textTransform: 'capitalize', 
-                    py: 2,
-                    mt: 3, 
-                    mb: 2,
-                    borderRadius: 0,
-                    backgroundColor: '#14192d',
-                    "&:hover": {
-                        backgroundColor: '#1e2a5a',
-                    }
-                }}
-                >
-                    Отправить 
-                </Button>
-            </Box>
+
         </Stack>
     )
 }

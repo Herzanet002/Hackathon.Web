@@ -11,16 +11,13 @@ import {
     Typography, 
     styled,
     ListItemButton,
-    ListItemText,
-    rgbToHex,
-} from '@mui/material';
+    ListItemText} 
+    from '@mui/material';
 // menu
 import DrawerItem from './DrawerItem';
 // rotas
 import { Link } from 'react-router-dom';
 
-
-// personalizacao
 const StyledToolbar = styled(Toolbar) ({
     display: 'flex',
     justifyContent: 'space-between',
@@ -50,6 +47,10 @@ const itemList = [
     {
         text: "Контакты",
         to: "/contact"
+    },
+    {
+        text: "Регистрация",
+        to: "/registration"
     }
 ];
 
@@ -67,7 +68,7 @@ const Navbar = () => {
         >
             <StyledToolbar>
                 <Typography
-                variant="h4"
+                variant="h5"
                 component="div"
                 color='#f4ebdb'
 
@@ -76,7 +77,7 @@ const Navbar = () => {
                 src={logo}
                 alt="logo-img"
                 style={{ 
-                    width: "150px", 
+                    width: "200px", 
                 }}
                 />
                 </Typography>

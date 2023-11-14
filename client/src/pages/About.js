@@ -1,12 +1,10 @@
 import React from 'react'
-import Content from '../components/Content';
-import Gallery from '../components/Gallery';
+import GetStarted from '../components/GetStarted'
 
 const About = () => {
   return (
     <>
-    <Content />
-    <Gallery />
+      <GetStarted />
     </>
   )
 }
