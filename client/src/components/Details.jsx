@@ -55,7 +55,7 @@ const Details = () => {
         }}
         >
           {/* Left Stack */}
-          <Stack component='section' direction="column" justifyContent='left'>
+          <Stack component='section' direction="column" justifyContent='left' marginLeft={'100px'}>
             <Title text={'Стало интересно?'} textAlign={'center'} />
             <Paragraph
               text={
@@ -87,7 +87,6 @@ const Details = () => {
               id="firstName"
               label="Имя"
               name="firstName"
-              autoFocus
               className='validate'
             />
     
