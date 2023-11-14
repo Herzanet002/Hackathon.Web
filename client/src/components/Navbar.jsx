@@ -45,10 +45,6 @@ const itemList = [
         to: "/program"
     },
     {
-        text: "Контакты",
-        to: "/contact"
-    },
-    {
         text: "Регистрация",
         to: "/registration"
     }

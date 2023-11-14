@@ -64,6 +64,8 @@ const Header = () => {
 
                 <Box>
                     <Button 
+                    component={Link} 
+                    to={'/registration'}
                     variant='contained'
                     sx={{
                         mr: 2,
@@ -87,7 +89,7 @@ const Header = () => {
                     </Button>
                     <Button 
                     component={Link} 
-                    to={'/about'}
+                    to={'/program'}
                     variant='outlined'
                     sx={{
                         px: 4, 
