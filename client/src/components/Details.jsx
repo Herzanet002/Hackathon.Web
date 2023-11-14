@@ -14,8 +14,13 @@ const Details = () => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
+            firstName: data.get('firstName'),
+            lastName: data.get('firstName'),
+            patronymic: data.get('patronymic'),
+            age: data.get('age'),
             email: data.get('email'),
-            phone: data.get('phone'),
+            expirience: data.get('expirience'),
+            profession: data.get('profession')
         });
     }
 
@@ -58,26 +63,74 @@ const Details = () => {
                 <TextField
                     margin="normal"
                     required
-                    fullWidth
+                    id="firstName"
+                    label="Имя"
+                    name="firstName"
+                    autoFocus
+                    className='validate'
+                />
+                <TextField
+                    margin="normal"
+                    required
+                    id="lastName"
+                    label="Фамилия"
+                    name="lastName"
+                    autoFocus
+                    className='validate'
+                />
+                <TextField
+                    margin="normal"
+                
+                    id="patronymic"
+                    label="Отчество"
+                    name="patronymic"
+                    autoFocus
+                    className='validate'
+                />
+                <TextField
+                    margin="normal"
+                    required
+                    
+                    id="age"
+                    label="Возраст"
+                    name="age"
+                    autoFocus
+                    className='validate'
+                />
+                <TextField
+                    margin="normal"
+                    required
+                    
                     id="email"
                     label="Email Address"
                     name="email"
                     autoComplete="email"
                     autoFocus
+                    className='validate'
                 />
                 <TextField
                     margin="normal"
                     required
-                    fullWidth
-                    name="phone"
-                    label="Phone Number"
-                    type="phone"
-                    id="phone"
-                    autoComplete="current-phone"
+                    
+                    id="experience"
+                    label="Опыт работы"
+                    name="experience"
+                    autoFocus
+                    className='validate'
+                />
+                <TextField
+                    margin="normal"
+                    required
+                    
+                    id="profession"
+                    label="Профессия"
+                    name="profession"
+                    autoFocus
+                    className='validate'
                 />
                 <Button 
                 variant="contained" 
-                fullWidth
+                
                 type="submit"
                 size="medium"
                 sx= {{ 
