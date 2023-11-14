@@ -36,9 +36,6 @@ const Details = () => {
             px: 2,
             
         }}
-        style={{ 
-            height: "72vh",
-        }}
         >
             <Stack
             component='section'
